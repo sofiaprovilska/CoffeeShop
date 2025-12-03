@@ -2,3 +2,70 @@
     font-family: "Basis";
     src: url("basis33.regular.ttf");
 }
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Basis";
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.HomePageContainer{
+    display: flex;
+    background-color: #C4B6AB;
+    justify-content: center;
+    height: 100vh;
+}
+.HomePage{
+    width: 70%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 15px;
+}
+.header{
+    grid-column: 1 / 13;
+    background-color: #c9bdb4;
+    display: grid;
+    align-items: self-start;
+    grid-template-columns: repeat(12, 1fr);
+}
+.icon{
+    grid-column: 1 / 4;
+}
+.menu{
+    grid-column: 4 / 13;
+    display: flex;
+    background-color: #9D8A7C;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    }
+.menu ul a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #2D1E17;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    justify-content: center;  
+    align-items: center;  
+    cursor: default;
+}
+.menu ul a:hover {
+    background-color: #5C4B3C;
+    color: #C4B6AB; 
+}
+
+.HomeContent{
+    background-color: #523F31;
+}
